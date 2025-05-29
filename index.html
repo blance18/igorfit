@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>План тренировок на лето — Игорь</title>
+<style>
+  body {
+    background: #000000;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 20px;
+  }
+  h1, h2 {
+    text-align: center;
+    color: #8ab4f8;
+    margin-bottom: 10px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #121212;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 0 20px #3333ff88;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  pre {
+    white-space: pre-wrap;
+    background: #1c1c1c;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    max-height: 420px;
+    overflow-y: auto;
+    color: #ccc;
+  }
+  /* Выделение дней отдыха */
+  .rest-day {
+    color: #ff5555 !important;
+    font-weight: 700;
+  }
+  /* Прогресс недели */
+  .progress-wrapper {
+    background: #222244;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+  }
+  .progress-bar-bg {
+    background: #444477;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    background: #7a8fff;
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+  }
+  .weeks-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .weeks-buttons button {
+    background: #333366;
+    border: none;
+    color: #ccc;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  .weeks-buttons button.active,
+  .weeks-buttons button:hover {
+    background: #7a8fff;
+    color: #fff;
+  }
+  /* Скрытый блок упражнений */
+  #exerciseSection {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>План тренировок на лето — Игорь</h1>
+
+    <section>
+      <h2>Программа тренировок на 4 недели</h2>
+      <pre id="programText">
+День 1 – Сила + кардио (станок + кросс)
+ • Жим лёжа – 4×6–8 (Отдых 60–90 сек)
+ • Австралийские подтягивания – 4×8–10 (Отдых 60–90 сек)
+ • Отжимания с отягощением или медленно – 3×макс (Отдых 60 сек)
+ • Планка – 3×1 мин (Отдых 30 сек)
+ • Кросс 2–3 км в среднем темпе (10–15 мин)
+
+<span class="rest-day">День 3 – Отдых / активность
+ • Бег 2 км + велосипед 20–30 мин</span>
+
+День 4 – Брусья + пресс + австралийские подтягивания
+ • Отжимания на брусьях – 4×макс (Отдых 60 сек)
+ • Отжимания от пола узким хватом – 3×15 (Отдых 60 сек)
+ • Подъёмы ног в упоре на брусьях – 4×15 (Отдых 60 сек)
+ • Австралийские подтягивания – 4×10 (Отдых 60–90 сек)
+ • Скручивания лёжа – 3×25 (Отдых 30–45 сек)
+ • Кросс 2 км в спокойном темпе
+
+День 5 – Кросс + турник (выносливость)
+ • Кросс 3 км (темп 5:30–6:00/км)
+ • Подтягивания обычные – 4×макс (Отдых 60–90 сек)
+ • Подтягивания узким хватом – 3×макс (Отдых 60–90 сек)
+ • Статический вис – 2×макс (Отдых 60 сек)
+ • Планка + подъёмы ног лёжа – 3× (Отдых 30–45 сек)
+
+День 6 – Жим + пресс + кросс
+ • Жим лёжа – 4×8 (Отдых 60–90 сек)
+ • Приседания с весом или без – 4×15 (Отдых 60–90 сек)
+ • Подъёмы корпуса на скамье – 4×20 (Отдых 30–45 сек)
+ • Кросс лёгкий – 1.5 км
+ • Планка – 3×1 мин (Отдых 30 сек)
+
+<span class="rest-day">День 7 – Отдых активный
+ • Ходьба минимум 10 тыс. шагов
+ • Велосипед, прогулка
+ • Сон не меньше 8 часов</span>
+      </pre>
+    </section>
+
+    <section>
+      <h2>Питание и рекомендации для снижения жира и укрепления пресса</h2>
+      <pre>
+Цели питания:
+Твоя цель — сжечь жир (особенно в области боков и живота), при этом сохранить мышцы и подготовить организм к массонабору.
+Рекомендуемый дефицит калорий: ~10-15% от нормы.
+
+Примерные нормы БЖУ:
+• Белки: 2 г на 1 кг веса = 150 г в день
+• Жиры: 1 г на 1 кг веса = 75 г в день
+• Углеводы: 2–2.5 г на 1 кг веса = 150–190 г в день
+
+Пример рациона на день (~2000–2200 ккал):
+
+Завтрак
+• Овсянка на воде или молоке – 60 г
+• 2 яйца + 2 белка (омлет)
+• Банан или яблоко
+
+Перекус
+• Греческий йогурт 150 г или творог 5% – 150–200 г• Орехи – 10–15 г
+
+Обед
+• Куриная грудка/говядина/рыба – 150–180 г
+• Рис/гречка/картошка – 100–150 г (вес до варки)
+• Овощи – 150–200 г
+
+Перекус 2
+• Фрукты (яблоко, груша) или морковь
+• Хлебец + немного арахисовой пасты или горсть орехов
+
+Ужин
+• Омлет из 3 яиц или тунец/творог
+• Овощи – 150–200 г
+• Немного бурого риса или чечевицы (по желанию)
+
+Перед сном (по желанию)
+• Творог 5% – 100–150 г или яйцо варёное
+
+Дополнительные рекомендации:
+• Вода: 2–2.5 литра в день минимум
+• Сон: 7.5–9 часов в сутки
+• Шаги в день: минимум 10 000, оптимально – 12 000+
+• Кардио: 3–4 раза в неделю, включая кроссы после силовой
+• Исключить фастфуд, газировку, переедание сладкого
+      </pre>
+    </section>
+
+    <section class="progress-wrapper">
+      <h2>Прогресс выполнения (недели)</h2>
+      <div class="progress-bar-bg">
+        <div id="weekProgress" class="progress-bar-fill"></div>
+      </div>
+      <div class="weeks-buttons">
+        <button data-week="1">Неделя 1</button>
+        <button data-week="2">Неделя 2</button>
+        <button data-week="3">Неделя 3</button>
+        <button data-week="4">Неделя 4</button>
+      </div>
+    </section>
+
+    <section id="exerciseSection">
+      <!-- Скрытый блок упражнений -->
+    </section>
+
+  </div>
+
+<script>
+  // Загружаем прогресс из localStorage (недели)
+  const progressKey = 'igorTrainingProgress';
+  let completedWeeks = JSON.parse(localStorage.getItem(progressKey)) || [];
+
+  const progressBar = document.getElementById('weekProgress');
+  const buttons = document.querySelectorAll('.weeks-buttons button');
+
+  // Функция обновления прогресс-бара
+  function updateProgressBar() {
+    const progressPercent = (completedWeeks.length / 4) * 100;
+    progressBar.style.width = progressPercent + '%';
+
+    buttons.forEach(btn => {
+      const weekNum = +btn.dataset.week;
+      if (completedWeeks.includes(weekNum)) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  // При клике по кнопкам отмечаем или снимаем неделю
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const weekNum = +btn.dataset.week;
+      if (completedWeeks.includes(weekNum)) {
+        completedWeeks = completedWeeks.filter(w => w !== weekNum);
+      } else {
+        completedWeeks.push(weekNum);
+      }
+      localStorage.setItem(progressKey, JSON.stringify(completedWeeks));
+      updateProgressBar();
+    });
+  });
+
+  updateProgressBar();
+</script>
+</body>
+</html>
